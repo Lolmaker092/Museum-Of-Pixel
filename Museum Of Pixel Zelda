@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legend of Zelda Startup</title>
+  <style>
+    /* Background styling for Zelda theme */
+    body {
+      background: url('https://wallpapercave.com/wp/wp3142021.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Press Start 2P', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
+    /* Container for text */
+    #content {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border: 3px solid #FFD700;
+      border-radius: 10px;
+    }
+
+    /* Text that will be animated */
+    .typed-text {
+      font-size: 24px;
+      color: #FFD700;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+      border-right: .15em solid #FFD700;
+      white-space: nowrap;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+    }
+
+    /* Animation for typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* Blinking cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #FFD700; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="content">
+    <h1>Legend of Zelda</h1>
+    <p class="typed-text">It’s dangerous to go alone! Take this.</p>
+  </div>
+
+</body>
+</html>
